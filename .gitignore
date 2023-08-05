@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+*.mov
+
 package-lock.json
 
 # testing
