@@ -1,7 +1,7 @@
 {
   "name": "woodfordnutrition.com",
   "version": "0.1.0",
-  "homepage": "https://kevinmuscara.github.io/woodfordnutrition.com",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.16",
