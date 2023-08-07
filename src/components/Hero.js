@@ -3,38 +3,38 @@ import { useState } from 'react'
 import Hours from './Hours';
 import Header from './Header';
 
-function isTimeInRange(targetTime, startTime, endTime) {
-  const targetDate = new Date(`2000-01-01 ${targetTime}`);
-  const startDate = new Date(`2000-01-01 ${startTime}`);
-  const endDate = new Date(`2000-01-01 ${endTime}`);
+// function isTimeInRange(targetTime, startTime, endTime) {
+//   const targetDate = new Date(`2000-01-01 ${targetTime}`);
+//   const startDate = new Date(`2000-01-01 ${startTime}`);
+//   const endDate = new Date(`2000-01-01 ${endTime}`);
 
-  return targetDate >= startDate && targetDate <= endDate;
-}
+//   return targetDate >= startDate && targetDate <= endDate;
+// }
 
 export default function Hero() {
   let [isOpen, setOpen] = useState(false);
 
-  let currentTime = new Date().toLocaleTimeString();
-  let currentDay = new Date().getDay();
-  let status;
+  // let currentTime = new Date().toLocaleTimeString();
+  // let currentDay = new Date().getDay();
+  // let status;
 
-  if(currentDay === 0) {
-    status = false;
-  } else {
-    if(currentDay === 6) {
-      if(isTimeInRange(currentTime, "8:00:00 AM", "2:00:00 PM")) {
-        status = true;
-      } else {
-        status = false;
-      }
-    } else {
-      if(isTimeInRange(currentTime, "6:30:00 AM", "6:00:00 PM")) {
-        status = true;
-      } else {
-        status = false;
-      }
-    }
-  }
+  // if(currentDay === 0) {
+  //   status = false;
+  // } else {
+  //   if(currentDay === 6) {
+  //     if(isTimeInRange(currentTime, "8:00:00 AM", "2:00:00 PM")) {
+  //       status = true;
+  //     } else {
+  //       status = false;
+  //     }
+  //   } else {
+  //     if(isTimeInRange(currentTime, "6:30:00 AM", "6:00:00 PM")) {
+  //       status = true;
+  //     } else {
+  //       status = false;
+  //     }
+  //   }
+  // }
 
   return (
     <>
@@ -52,7 +52,7 @@ export default function Hero() {
           <Header />
           <div className="-mt-20 mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
             <div>
-              <div className="mt-24 mb-3 sm:mt-32 lg:mt-16">
+              {/* <div className="mt-24 mb-3 sm:mt-32 lg:mt-16">
                 {status === true && (
                   <button onClick={() => setOpen(true)} className="inline-flex space-x-6">
                     <span 
@@ -69,7 +69,7 @@ export default function Hero() {
                     </span>
                   </button>
                 )}
-              </div>
+              </div> */}
               <h1 className="text-5xl font-bold tracking-tight">Woodford Nutrition C & J</h1>
               <p className="mt-4 text-xl text-gray-500">
                 Community happens here.
